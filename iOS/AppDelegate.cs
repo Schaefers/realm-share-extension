@@ -1,5 +1,6 @@
 ﻿using Foundation;
 using UIKit;
+using Realms;
 
 namespace Test.iOS
 {
@@ -18,9 +19,9 @@ namespace Test.iOS
 
 		public override bool FinishedLaunching(UIApplication application, NSDictionary launchOptions)
 		{
-			// Override point for customization after application launch.
-			// If not required for your application you can safely delete this method
-
+            // Override point for customization after application launch.
+            // If not required for your application you can safely delete this method
+            var realm = Realm.GetInstance();
 			return true;
 		}
 
